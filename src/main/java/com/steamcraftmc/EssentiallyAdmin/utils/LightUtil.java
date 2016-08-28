@@ -1,4 +1,4 @@
-package com.steamcraftmc.EssentiallyMisc.utils;
+package com.steamcraftmc.EssentiallyAdmin.utils;
 
 import net.minecraft.server.v1_10_R1.BlockPosition;
 import net.minecraft.server.v1_10_R1.WorldServer;

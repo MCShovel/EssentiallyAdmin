@@ -1,6 +1,6 @@
-package com.steamcraftmc.EssentiallyMisc;
+package com.steamcraftmc.EssentiallyAdmin;
 
-import com.steamcraftmc.EssentiallyMisc.utils.BaseYamlSettingsFile;
+import com.steamcraftmc.EssentiallyAdmin.utils.BaseYamlSettingsFile;
 
 public class MainConfig  extends BaseYamlSettingsFile {
 	public MainConfig(MainPlugin plugin) { super(plugin, "config.yml"); }

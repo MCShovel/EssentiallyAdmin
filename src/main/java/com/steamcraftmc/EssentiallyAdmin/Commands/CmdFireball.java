@@ -1,4 +1,4 @@
-package com.steamcraftmc.EssentiallyMisc.Commands;
+package com.steamcraftmc.EssentiallyAdmin.Commands;
 
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -13,7 +13,7 @@ import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
-import com.steamcraftmc.EssentiallyMisc.MainPlugin;
+import com.steamcraftmc.EssentiallyAdmin.MainPlugin;
 
 public class CmdFireball extends BaseCommand implements Listener {
     final int speed = 2;

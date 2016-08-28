@@ -1,4 +1,4 @@
-package com.steamcraftmc.EssentiallyMisc.Commands;
+package com.steamcraftmc.EssentiallyAdmin.Commands;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -16,7 +16,7 @@ import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import com.steamcraftmc.EssentiallyMisc.MainPlugin;
+import com.steamcraftmc.EssentiallyAdmin.MainPlugin;
 
 public class CmdGod extends BaseCommand implements Listener {
     public CmdGod(MainPlugin plugin) {

@@ -1,4 +1,4 @@
-package com.steamcraftmc.EssentiallyMisc.Commands;
+package com.steamcraftmc.EssentiallyAdmin.Commands;
 
 import java.util.Map;
 
@@ -7,7 +7,7 @@ import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
-import com.steamcraftmc.EssentiallyMisc.MainPlugin;
+import com.steamcraftmc.EssentiallyAdmin.MainPlugin;
 
 public class CmdGameMode extends BaseCommand {
 

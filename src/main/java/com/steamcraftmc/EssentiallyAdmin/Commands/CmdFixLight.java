@@ -1,12 +1,12 @@
-package com.steamcraftmc.EssentiallyMisc.Commands;
+package com.steamcraftmc.EssentiallyAdmin.Commands;
 
 import org.bukkit.Chunk;
 import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.entity.Player;
 
-import com.steamcraftmc.EssentiallyMisc.MainPlugin;
-import com.steamcraftmc.EssentiallyMisc.utils.ChunkWrap;
+import com.steamcraftmc.EssentiallyAdmin.MainPlugin;
+import com.steamcraftmc.EssentiallyAdmin.utils.ChunkWrap;
 
 public class CmdFixLight extends BaseCommand
 {

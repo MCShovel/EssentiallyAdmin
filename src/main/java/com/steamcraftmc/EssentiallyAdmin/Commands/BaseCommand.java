@@ -1,8 +1,8 @@
-package com.steamcraftmc.EssentiallyMisc.Commands;
+package com.steamcraftmc.EssentiallyAdmin.Commands;
 
 import java.util.logging.Level;
 
-import com.steamcraftmc.EssentiallyMisc.MainPlugin;
+import com.steamcraftmc.EssentiallyAdmin.MainPlugin;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

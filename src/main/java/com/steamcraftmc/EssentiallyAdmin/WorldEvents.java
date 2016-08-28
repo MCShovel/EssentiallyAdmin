@@ -1,4 +1,4 @@
-package com.steamcraftmc.EssentiallyMisc;
+package com.steamcraftmc.EssentiallyAdmin;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

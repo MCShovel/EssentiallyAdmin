@@ -1,4 +1,4 @@
-package com.steamcraftmc.EssentiallyMisc.Commands;
+package com.steamcraftmc.EssentiallyAdmin.Commands;
 
 import org.bukkit.Chunk;
 import org.bukkit.World;
@@ -6,7 +6,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.steamcraftmc.EssentiallyMisc.MainPlugin;
+import com.steamcraftmc.EssentiallyAdmin.MainPlugin;
 
 import java.lang.management.ManagementFactory;
 import java.util.List;

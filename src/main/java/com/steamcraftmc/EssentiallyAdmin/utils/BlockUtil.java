@@ -1,4 +1,4 @@
-package com.steamcraftmc.EssentiallyMisc.utils;
+package com.steamcraftmc.EssentiallyAdmin.utils;
 
 import java.util.HashSet;
 import java.util.Set;

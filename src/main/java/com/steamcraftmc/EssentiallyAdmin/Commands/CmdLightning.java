@@ -1,4 +1,4 @@
-package com.steamcraftmc.EssentiallyMisc.Commands;
+package com.steamcraftmc.EssentiallyAdmin.Commands;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -6,8 +6,8 @@ import org.bukkit.block.Block;
 import org.bukkit.command.Command;
 import org.bukkit.entity.Player;
 
-import com.steamcraftmc.EssentiallyMisc.MainPlugin;
-import com.steamcraftmc.EssentiallyMisc.utils.BlockUtil;
+import com.steamcraftmc.EssentiallyAdmin.MainPlugin;
+import com.steamcraftmc.EssentiallyAdmin.utils.BlockUtil;
 
 import java.util.Set;
 

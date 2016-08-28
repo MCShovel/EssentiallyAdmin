@@ -1,9 +1,9 @@
-package com.steamcraftmc.EssentiallyMisc.Commands;
+package com.steamcraftmc.EssentiallyAdmin.Commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.entity.Player;
 
-import com.steamcraftmc.EssentiallyMisc.MainPlugin;
+import com.steamcraftmc.EssentiallyAdmin.MainPlugin;
 
 public class CmdBurn extends BaseCommand {
     public CmdBurn(MainPlugin plugin) {
