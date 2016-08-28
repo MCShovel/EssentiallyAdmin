@@ -75,14 +75,20 @@ public class CmdGod extends BaseCommand implements Listener {
 		
         boolean enabled = !isGod(target);
         setGod(target, enabled, persist);
+
+        target.sendMessage(
+    			enabled
+    			? plugin.Config.format("messages.god-enabled", "&6God Mode &2enabled&6.")
+            	: plugin.Config.format("messages.god-disabled", "&6God Mode &4disabled&6.")
+			);
         
         if (!player.equals(target)) {
         	player.sendMessage(
         			enabled
-        			? plugin.Config.format("messages.god-other-enabled", "&6God Mode enabled for &3{name}&6.", "name", target.getName())
-                	: plugin.Config.format("messages.god-other-disabled", "&6God Mode disabled for &3{name}&6.", "name", target.getName())
+        			? plugin.Config.format("messages.god-other-enabled", "&6God Mode &2enabled&6 for &3{name}&6.", "name", target.getName())
+                	: plugin.Config.format("messages.god-other-disabled", "&6God Mode &4disabled&6 for &3{name}&6.", "name", target.getName())
 				);
-        }
+        } 
         return true;
     }
 	

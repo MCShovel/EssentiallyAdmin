@@ -33,6 +33,7 @@ commands:
     permission: essentials.repair
     permission-message: '§4You do not have permission to use this command.'
     default: op
+
 #Moderator commands:
   fixlight:
     aliases: [relight]
@@ -79,5 +80,12 @@ commands:
     usage: /<command> [player]
     aliases: [smite,strike,thor]
     permission: essentials.lightning
+    permission-message: '§4You do not have permission to use this command.'
+    default: op
+  speed:
+    description: Change your speed limits.
+    usage: /<command> [type] <speed>
+    aliases: []
+    permission: essentials.speed
     permission-message: '§4You do not have permission to use this command.'
     default: op
