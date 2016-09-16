@@ -43,7 +43,7 @@ public class MainPlugin extends JavaPlugin {
         new com.steamcraftmc.EssentiallyAdmin.Commands.CmdSpeed(this);
 
     	_listener = new WorldEvents(this);
-        getServer().getPluginManager().registerEvents(_listener, this);
+        _listener.start();
         fb.start();
         god.start();
         log(Level.INFO, "Plugin listening for events.");
@@ -53,6 +53,7 @@ public class MainPlugin extends JavaPlugin {
     public void onDisable() {
         fb.stop();
         god.stop();
+        _listener.stop();
     	HandlerList.unregisterAll(_listener);
     }
 

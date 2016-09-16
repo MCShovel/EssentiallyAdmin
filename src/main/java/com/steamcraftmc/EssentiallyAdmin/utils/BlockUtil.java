@@ -19,4 +19,31 @@ public class BlockUtil {
 		}
 		return _transparent;
 	}
+
+	public static String properCase(String text) {
+		char[] chars = text.toCharArray();
+		boolean makeUpper = true;
+		for (int ix = 0; ix < chars.length; ix++) {
+			char ch = makeUpper ? Character.toUpperCase(chars[ix]) : Character.toLowerCase(chars[ix]);
+			makeUpper = !Character.isLetter(ch);
+			chars[ix] = makeUpper ? ' ' : ch;
+		}
+
+		return new String(chars).replaceAll("\\s\\s+", " ").trim();
+	}
+	
+	public static String itemName(int materialId) {
+		String tmp = null;
+		try {
+			net.minecraft.server.v1_10_R1.ItemStack stack = new net.minecraft.server.v1_10_R1.ItemStack(net.minecraft.server.v1_10_R1.Item.getById(materialId));
+			tmp = stack == null ? null : stack.getName();
+		}
+		catch (Exception e) {}
+		if (tmp == null || tmp.length() == 0) {
+			tmp = Material.getMaterial(materialId).name();
+		}
+		tmp = properCase(tmp);
+		return tmp;
+	}
+	
 }

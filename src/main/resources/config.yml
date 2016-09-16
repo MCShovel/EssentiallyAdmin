@@ -6,6 +6,14 @@ lighting:
 speed:
   max: 10
 
+anvilSigning:
+  enabled: true
+  color: '&3'
+  enchanted: '&o'
+  lore:
+    - '&r&7Created By {player}'
+    - '&r&7On {date}'
+
 gods:
   #uuid: true/false
 
