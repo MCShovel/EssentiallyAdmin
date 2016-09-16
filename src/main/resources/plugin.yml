@@ -33,6 +33,20 @@ commands:
     permission: essentials.repair
     permission-message: '§4You do not have permission to use this command.'
     default: op
+  rename:
+    description: Renames the item you are holding.
+    usage: /<command> [name]
+    aliases: []
+    permission: essentials.rename
+    permission-message: '§4You do not have permission to use this command.'
+    default: op
+  lore:
+    description: Adds or changes the lore for the item held.
+    usage: /<command> <line> [text]
+    aliases: []
+    permission: essentials.lore
+    permission-message: '§4You do not have permission to use this command.'
+    default: op
 
 #Moderator commands:
   fixlight:

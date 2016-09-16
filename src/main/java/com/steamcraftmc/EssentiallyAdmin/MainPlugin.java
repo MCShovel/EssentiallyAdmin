@@ -40,6 +40,8 @@ public class MainPlugin extends JavaPlugin {
         new com.steamcraftmc.EssentiallyAdmin.Commands.CmdGC(this);
         god = new com.steamcraftmc.EssentiallyAdmin.Commands.CmdGod(this);
         new com.steamcraftmc.EssentiallyAdmin.Commands.CmdRepair(this);
+        new com.steamcraftmc.EssentiallyAdmin.Commands.CmdRename(this);
+        new com.steamcraftmc.EssentiallyAdmin.Commands.CmdLore(this);
         new com.steamcraftmc.EssentiallyAdmin.Commands.CmdSpeed(this);
 
     	_listener = new WorldEvents(this);
