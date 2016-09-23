@@ -4,6 +4,9 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.command.Command;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.LightningStrike;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 
 import com.steamcraftmc.EssentiallyAdmin.MainPlugin;
@@ -40,7 +43,16 @@ public class CmdLightning extends BaseCommand {
         	target = b.getLocation();
         }
         
-        target.getWorld().strikeLightningEffect(target);
+        LightningStrike strike = target.getWorld().strikeLightningEffect(target);
+        //target.getWorld().strikeLightning(target);
+        
+        for (Entity e : target.getWorld().getNearbyEntities(target, 3, 3, 3)) {
+        	if (e instanceof LivingEntity) {
+        		LivingEntity being = (LivingEntity)e;
+        		being.damage(5, strike);
+        	}
+        }
+        
         if (pTarget != null) {
             pTarget.sendMessage(plugin.Config.format("messages.smitten", "&6You have been smitten."));
             player.sendMessage(plugin.Config.format("messages.lightning", "&6You have unleashed the power of Thor!"));
