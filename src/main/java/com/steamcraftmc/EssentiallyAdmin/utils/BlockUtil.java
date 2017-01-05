@@ -35,7 +35,7 @@ public class BlockUtil {
 	public static String itemName(int materialId) {
 		String tmp = null;
 		try {
-			net.minecraft.server.v1_11_R1.ItemStack stack = new net.minecraft.server.v1_11_R1.ItemStack(net.minecraft.server.v1_11_R1.Item.getById(materialId));
+			net.minecraft.server.v1_11_R1.ItemStack stack = new net.minecraft.server.v1_11_R1.ItemStack(net.minecraft.server.v1_11_R1.Item.getById(materialId), 1);
 			tmp = stack == null ? null : stack.getName();
 		}
 		catch (Exception e) {}
