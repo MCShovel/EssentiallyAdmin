@@ -1,11 +1,11 @@
 package com.steamcraftmc.EssentiallyAdmin.utils;
 
-import net.minecraft.server.v1_10_R1.BlockPosition;
-import net.minecraft.server.v1_10_R1.WorldServer;
+import net.minecraft.server.v1_11_R1.BlockPosition;
+import net.minecraft.server.v1_11_R1.WorldServer;
 
 import org.bukkit.World;
 import org.bukkit.block.Block;
-import org.bukkit.craftbukkit.v1_10_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_11_R1.CraftWorld;
 
 /**
  * Find the method by going through CraftBlock.setTypeId()
